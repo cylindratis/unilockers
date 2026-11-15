@@ -20,6 +20,6 @@ Dados em `assets/data.json`: 10.000 trajetórias, semente 20261115; 5.000 para s
 
 A comparação comercial usa um módulo, sem dívida, um ano no lucro real e os seguintes no Simples. A seção de orçamento-base usa 50% de financiamento. Esses universos são identificados na página. Não há calibração específica de demanda por instituição, parceria universitária, financiamento aprovado ou oferta comercial ativa.
 
-Referência visual indicada pelo autor: https://cylindratis.github.io/sin/ — Geist, fundos claros/escuros e contraste tipográfico, com identidade UniLockers e azul #349bd5. Logos fornecidas pelo usuário. Ilustração do armário desenhada em CSS, não fotografia do fornecedor.
+Referência visual indicada pelo autor: https://cylindratis.github.io/sin/ — Geist, fundos claros/escuros e contraste tipográfico, com identidade UniLockers e azul #349bd5. Logos fornecidas pelo usuário. Imagens conceituais do produto e de aplicações em campus fornecidas pelo usuário; não comprovam instalações ou configuração comercial. Sistema visual documentado em design.md.
 
 Os valores são cenários acadêmicos, condicionais a premissas de demanda e custos. O estudo inclui limitações de enquadramento tributário, importação, contratos e acesso a crédito.
