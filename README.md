@@ -10,7 +10,7 @@ Para prévia local: `python -m http.server 8000` e acessar `http://localhost:800
 
 ## Conteúdo
 
-- Problema, proposta, fluxo de uso e expansão com um módulo por campus.
+- Problema, proposta de valor, demanda, segmentos de clientes, possibilidade de automação, aspectos locacionais e roadmap, com trechos literais das duas apresentações fornecidas.
 - Projeção determinística de 60 meses e comparação de financiamento.
 - Monte Carlo com trajetórias, média, faixa central de 90% e distribuição final estimada por kernel gaussiano.
 - Comparação das médias de 180 combinações de preço/mix, com destaque na vencedora pela amostra de seleção.
@@ -21,5 +21,7 @@ Dados em `assets/data.json`: 10.000 trajetórias, semente 20261115; 5.000 para s
 A comparação comercial usa um módulo, sem dívida, um ano no lucro real e os seguintes no Simples. A seção de orçamento-base usa 50% de financiamento. Esses universos são identificados na página. Não há calibração específica de demanda por instituição, parceria universitária, financiamento aprovado ou oferta comercial ativa.
 
 Referência visual indicada pelo autor: https://cylindratis.github.io/sin/ — Geist, fundos claros/escuros e contraste tipográfico, com identidade UniLockers e azul #349bd5. Logos fornecidas pelo usuário. Imagens conceituais do produto e de aplicações em campus fornecidas pelo usuário; não comprovam instalações ou configuração comercial. Sistema visual documentado em design.md.
+
+O pitch registra a origem de cada trecho em `data-copy-source="apresentação:página"`. A análise financeira anterior foi preservada por solicitação do autor. `assets/pitch.css` e `assets/pitch.js` refinam a composição, a entrada em máscara, a transição de foco do corredor e a proposta de valor expansível. Há suporte a movimento reduzido; as descrições do pitch ficam visíveis sem JavaScript.
 
 Os valores são cenários acadêmicos, condicionais a premissas de demanda e custos. O estudo inclui limitações de enquadramento tributário, importação, contratos e acesso a crédito.

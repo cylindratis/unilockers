@@ -18,15 +18,6 @@
   $('nav-links').querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
     $('nav-links').classList.remove('open');$('menu').setAttribute('aria-expanded','false');
   }));
-  const useMap=$('use-map');
-  for(let n=1;n<=8;n++){const el=document.createElement('span');el.textContent=String(n);useMap.append(el)}
-  function use(month){
-    $('use-hour').classList.toggle('active',!month);$('use-month').classList.toggle('active',month);
-    $('use-hour').setAttribute('aria-pressed',String(!month));$('use-month').setAttribute('aria-pressed',String(month));
-    [...useMap.children].forEach((el,i)=>el.classList.toggle('active',month?i<4:i>=4));
-    $('use-copy').textContent=month?'Para quem volta todos os dias. Um compartimento reservado durante o mês, respeitando os horários de acesso ao campus.':'Para um treino, uma aula ou um intervalo. O espaço fica disponível para o próximo usuário após a retirada.';
-  }
-  $('use-hour').addEventListener('click',()=>use(false));$('use-month').addEventListener('click',()=>use(true));use(false);
   function setMode(next){
     mode=next;hover=null;
     $('show-fan').classList.toggle('active',mode==='fan');$('show-options').classList.toggle('active',mode==='options');

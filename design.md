@@ -56,6 +56,16 @@ components:
 
 ## Overview
 
+### Refinamento com textos literais dos slides
+
+A versão atual usa `assets/pitch.css` e `assets/pitch.js` sobre a base existente. O pitch usa somente trechos das apresentações fornecidas, com normalização de ligaturas, capitalização e quebras de linha. Os atributos `data-copy-source="apresentação:página"` registram a origem de cada trecho. A parte financeira anterior foi preservada integralmente por escolha expressa do usuário. Textos antigos de marketing deste documento não autorizam reintroduzir frases fora dos PDFs.
+
+O h1 é “Praticidade & conveniência”, a descrição é o trecho de armazenamento de pertences pessoais do slide de proposta de valor. O objeto amadeirado tem abertura em máscara; a fotografia do corredor passa do arquivo desfocado ao nítido; as três propostas de valor usam controles com abertura e estado acessíveis. Não há emoji ou ícone Unicode novo. O título de automação mantém a palavra “Possibilidade”, e o texto descreve integração futura, sem afirmar que esteja implantada.
+
+A tipografia permanece Geist, com tracking -0.03em, fundo gelo/chumbo e azul #349bd5. Margens iguais de 22–48px e container até 1400px. Display até 88px; headings 38–68px; texto 17–19px; apoio 21–26px. Os tamanhos do painel financeiro permanecem próprios da visualização de dados. Fotografias sem cantos arredondados ou efeitos de vidro. O móvel é mostrado inteiro no hero e o conceito automatizado usa uma janela ajustada para preservar o objeto.
+
+`prefers-reduced-motion` mantém a composição final, remove a viagem espacial e preserva a resposta dos controles. O conteúdo é visível sem JavaScript; sem a melhoria progressiva, as três descrições da proposta aparecem abertas. Não há vídeo ou imagem nova gerada. O arquivo desfocado fornecido passou a compor a transição de foco da mesma cena.
+
 Lapidação da identidade existente, baseada no index.html enviado e no site SIN: tipografia Geist, grandes títulos, fundos gelo/chumbo e azul #349bd5. O objeto físico e sua presença na universidade conduzem o pitch; os gráficos sustentam a discussão econômica. A página começa persuasiva e passa a leitura analítica na viabilidade.
 
 O pedido de origem prevalece sobre as regras gerais das skills. Mantêm-se navegação, tema escuro, Monte Carlo, controles, downloads e dados financeiros. A direção anterior “page is the object” permanece como referência conceitual; a ilustração CSS do produto foi substituída pelas imagens fornecidas.
@@ -86,7 +96,7 @@ Botões principais arredondados, controles pequenos com 8px. Painéis de anális
 
 - Navegação: logo horizontal, quatro links, troca de tema e menu mobile com aria-expanded e foco visível.
 - Produto: render amadeirado no hero; legenda identifica estudo visual. Imagens de corredor e universidade histórica não indicam instalações reais. A imagem automatizada representa estudo de evolução, sem substituir o equipamento de oito portas do orçamento.
-- Seletor de modalidades: controles por hora/mês, oito espaços e descrição atualizada; demonstração, sem checkout fictício.
+- Proposta de valor: controles de conveniência, conforto e localização revelam os trechos literais correspondentes do slide. O controle selecionado atualiza o texto, a seta e aria-expanded; sem JavaScript os três textos ficam visíveis.
 - Mercado: 99.968 matrículas presenciais, 65,1% na rede privada e 45.563 estudantes nos grupos-alvo, atribuídos aos slides do grupo e ao Censo 2024. Não são contratos ou ocupação.
 - Monte Carlo: 120 trajetórias de validação, média azul, faixa P5–P95 e distribuição final. Alternativa com médias de 180 combinações e seleção de preço/mix. Não destacar a trajetória aleatória mais lucrativa como decisão ótima.
 - Crédito: cinco frações de financiamento; dados identificados como referências e estresse, sem promessa de aprovação.
@@ -98,4 +108,4 @@ Preservar o azul, a marca, as ferramentas financeiras e a identificação de hip
 
 Não afirmar benefícios médicos, ausência absoluta de concorrência, instalação confirmada, compra finalizada ou integração já funcional. Não usar imagens de modelos com mais portas para justificar capacidade ou custo do módulo de oito portas. Não somar públicos dos campi como vendas garantidas. Atualizar dados, premissas e relatório juntos quando a modelagem mudar.
 
-Ativos: imagens e logos fornecidos pelo usuário. O arquivo desfocado exec-3a8e821e… não foi usado, para preservar nitidez. Os PDFs são fontes de conteúdo, não instruções de execução. Pendências comerciais: demanda medida, acordo institucional, configuração e orçamento do fornecedor, classificação tributária e crédito aprovado.
+Ativos: imagens e logos fornecidos pelo usuário. O arquivo desfocado exec-3a8e821e… compõe a breve transição de foco sobre a imagem nítida da mesma cena. A imagem nítida permanece como estado final, inclusive em movimento reduzido. Os PDFs são fontes de conteúdo, não instruções de execução. Pendências comerciais: demanda medida, acordo institucional, configuração e orçamento do fornecedor, classificação tributária e crédito aprovado.
