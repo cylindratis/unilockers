@@ -50,12 +50,12 @@
     const records=data.financial.slice(micro?5:0,micro?10:5);
     const body=$('funding-body');body.replaceChildren();
     records.forEach(f=>{
-      const o=f.options.find(o=>o.cut===12), d=o.deterministic;
+      const o=f.options.find(o=>o.cut===f.selected_cut), d=o.deterministic;
       const row=document.createElement('tr');
       [percent.format(f.fraction),money.format(d.equity),money.format(d.first_amort),d.cet_annual===null?'Não se aplica':percent.format(d.cet_annual),percent.format(o.validation.probability_cash_shortfall)].forEach(value=>{const td=document.createElement('td');td.textContent=value;row.append(td)});
       body.append(row);
     });
-    $('credit-note').textContent=micro?'Estresse: teto de 4% ao mês, 36 meses SAC, sem carência. Prazo hipotético e encargos estimados para comparação; não é uma proposta bancária. Risco calculado com lucro real por um ano e migração ao Simples.':'Referência: 60 meses SAC, 12 de carência do principal e juros pagos. TR mensal de referência de 0,1693% + 6,068% a.a.; cadastro de R$ 500, 2% iniciais e renovação anual estimada. Custo efetivo calculado, sem proposta bancária. Valores sujeitos a enquadramento e aprovação.';
+    $('credit-note').textContent=micro?'Estresse: 4% ao mês, 36 meses SAC, sem carência. Prazo hipotético e encargos estimados para comparação; não é uma proposta bancária. Risco calculado no Simples desde a abertura.':'Referência: 60 meses SAC, 12 de carência do principal e juros pagos. TR mensal de referência de 0,1693% + 6,068% a.a.; encargo inicial de R$ 500, 2% sobre o principal e R$ 500 anuais enquanto há saldo; hipóteses de cálculo. Custo efetivo calculado, sem proposta bancária. Valores sujeitos a enquadramento e aprovação.';
   }
   $('credit').addEventListener('change',finance);
   let geometry;

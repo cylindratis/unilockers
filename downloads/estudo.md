@@ -1,296 +1,210 @@
-# UNILOCKERS — REVISÃO COM TARIFAS ATÉ R$ 15/HORA
+## 3.4. Análise da viabilidade financeira
 
-**Referência: 15/11/2026. Calendário ilustrativo: janeiro de 2027 a dezembro de 2031.**
+### 3.4.1. Premissas e investimento inicial
 
-Esta versão incorpora as anotações do grupo, compara preços e distribuição das oito portas, simula cinco participações de financiamento e avalia a sequência lucro real → Simples Nacional. Os resultados anteriores não devem ser combinados com os desta revisão: custos, horários, demanda e preços mudaram.
+A análise considera a implantação de um armário inteligente de oito compartimentos em uma instituição privada de ensino. O horizonte vai de janeiro de 2027 a dezembro de 2031, totalizando sessenta meses. A empresa é organizada como sociedade limitada com sócio único, com sede inicial em Porto Alegre. Para fins dos cálculos, adota-se a hipótese de locação pura de bens móveis sob a CNAE 7729-2/02, conforme a proposta da seção 3.1. A validade desse tratamento depende do contrato e da operação efetivamente realizados.
 
-## 1. Decisão que o modelo permite examinar
+O equipamento tem preço bruto de referência de R$ 1.700,00, dentro do intervalo de R$ 1.500,00 a R$ 2.500,00 informado para o estudo. Esse preço antecede frete e tributos. A captura comercial do fornecedor menciona recursos de acesso remoto e integração, mas a configuração contratada, as licenças e a compatibilidade com pagamentos brasileiros ainda precisam ser confirmadas. A provisão de importação corresponde a uma estimativa orçamentária agregada; a definição da NCM e do tratamento aduaneiro poderá alterar o desembolso.
 
-A melhor combinação na grade de maior valor presente esperado foi **R$ 15/hora, R$ 300/mês e quatro portas mensais com quatro temporárias**. Foram testadas tarifas de R$ 5, R$ 8, R$ 10, R$ 12 e R$ 15/hora, mensalidades de R$ 120, R$ 180, R$ 240 e R$ 300 e as nove divisões possíveis das portas. O resultado é o melhor entre as 180 combinações avaliadas, e não uma prova de preço ótimo fora da grade.
-
-A disposição a pagar R$ 15/hora foi tratada como teto autorizado para teste, não como contratação observada. A demanda diminui quando o preço sobe, por uma elasticidade ainda estimada. Mesmo que o público possua renda maior, sua adesão nesse preço precisa ser validada.
-
-No cenário-base de um módulo, início no lucro real, migração ao Simples no segundo ano e 50% financiado:
-
-- Implantação estimada: **R$ 9.394,00**.
-- Reserva de giro: **R$ 4.830,00**.
-- Aporte total antes de encargos financeiros: **R$ 14.224,00**.
-- Recursos próprios: **R$ 7.112,00**.
-- Principal do empréstimo, incluindo encargos iniciais: **R$ 7.767,35**.
-- Receita do primeiro ano: **R$ 50.167,05**.
-- Caixa do primeiro ano após tributos e parcelas: **R$ 11.699,93**.
-- VPL do fluxo disponível após dívida, deduzido o aporte próprio: **R$ 108.192,85**.
-
-Esse VPL usa retorno exigido de 12% real ao ano, combinado com inflação de 4% para formar desconto nominal de 16,48% ao ano. Os fluxos são nominais. O caixa fica retido na empresa e não representa dividendos efetivamente pagos ao sócio. Não há venda final do equipamento nem liberação do giro para atingir a meta de cinco anos.
-
-### Recuperação do investimento e volume mínimo
-
-Sem dívida, o investimento integral de R$ 14.224 é recuperado no **mês 14**, tanto no payback simples quanto no descontado. Com 50% financiado, o aporte próprio de R$ 7.112 é recuperado no **mês 8 pelo critério simples e no mês 9 pelo descontado**. O prazo menor do capital próprio não quita antecipadamente a dívida: o contrato continua sendo pago até o mês 60. Os indicadores são o primeiro mês de saldo acumulado não negativo, com fluxos retidos na empresa, e não datas de dividendos pagos.
-
-| Participação financiada | Payback simples do aporte próprio | Payback descontado do aporte próprio |
-|---:|---:|---:|
-| 100,00% | Não se aplica | Não se aplica |
-| 75,00% | 6 meses | 6 meses |
-| 50,00% | 8 meses | 9 meses |
-| 10,00% | 11 meses | 14 meses |
-| 0,00% | 14 meses | 14 meses |
-
-Para calcular um limite de procura sem impor tarifa mínima, mantiveram-se R$ 15/h, R$ 300/mês, mix 4/4, 50% financiado e a sequência real → Simples. Reduziu-se proporcionalmente a procura de ambas as modalidades, preservando sazonalidade, rampa e crescimento:
-
-- **Retorno de 12% real recuperado até o mês 60:** o limite de VPL zero ocorre com 32,37% da procura-base. No primeiro ano, isso representa média de 26,32 sessões de três horas por mês e 0,61 mensalista ocupado por mês, com receita anual de R$ 16.402,90. Contudo, essa trajetória apresenta falta máxima de caixa de R$ 4.440,27.
-- **Retorno no prazo e caixa não negativo com a reserva inicial prevista:** exige cerca de 44,24% da procura-base, ou 35,97 sessões/mês e 0,83 mensalista/mês no primeiro ano. A receita anual correspondente é R$ 22.410,24. Esse é um limite matemático sem folga adicional, não uma meta comercial prudente.
-
-Os mensalistas fracionários representam médias de ocupação ao longo dos meses. Essas combinações não são mínimos independentes: dependem dos dois serviços contribuírem conjuntamente e da evolução prevista após o primeiro ano. Um saldo final positivo pode coexistir com falta de caixa anterior, daí a diferença entre os dois limites. No cenário-base completo, as médias do primeiro ano são 81,02 sessões/mês e 1,78 mensalista/mês.
-
-## 2. Premissas incorporadas e pendências
-
-| Tema | Tratamento nesta revisão |
+| Componente | Valor |
 |---|---|
-| Produto | Armário de oito portas documentado no PDF lockerss.pdf fornecido pelo grupo. O material menciona API/SDK e acesso remoto, mas a inclusão desses recursos na configuração de oito portas e no preço exibido depende de confirmação. |
-| Compra | R$ 1.700 brutos como referência; preço varia de R$ 1.500 a R$ 2.500 no Monte Carlo. Não há cotação firme de compra. |
-| Horário | Segunda a sábado, 7h30–21h30: 14 horas diárias. |
-| Calendário | Contagem real dos dias de segunda a sábado de 2027–2031. Feriados e bloqueios institucionais não informados; a sazonalidade permanece estimada. |
-| Energia, internet, instalação e adequações | Custo direto zero para a empresa, conforme cessão informada. |
-| Segurança | Ambiente interno e monitorado por câmera. |
-| Repasse à instituição | Indefinido. Hipótese-base de 10% da receita; triangular entre 0%, 10% e 20% no Monte Carlo. Não se presume gratuidade definitiva. |
-| Contrato | Prazo e renovação indefinidos. A projeção de cinco anos pressupõe continuidade; foi acrescentado teste de interrupção antecipada. |
-| Divulgação | Desembolso zero; realizada pelo sócio. |
-| Retiradas | Zero; resultado reinvestido. Não se atribuiu salário fictício ao caixa. O resultado depende de trabalho inicialmente não remunerado. |
-| Limpeza e manutenção | Terceirizadas; hipóteses de R$ 200 e R$ 80 por módulo/mês. Não há contratos ou cotações confirmados. |
-| Peças e reparos | Reposição extraordinária de R$ 800 por módulo no mês 37, além de manutenção rotineira e risco de incidentes. |
-| Seguro | Prêmio contratado zero. Mantém-se uma perda eventual de R$ 1.000, com frequência assumida de 0,10/ano por módulo. |
-| Forma jurídica e local | Sociedade limitada com um único sócio, em Porto Alegre. |
-| CNAE | 5211-7/02, conforme o trabalho. O código futuro 7729-2/02 para eventos não foi usado para substituir a atividade principal. |
-| Depreciação | Física gerencial de 5% a.a.; integração amortizada em 60 meses por hipótese. Aceitação fiscal e vidas úteis precisam de validação contábil. |
+| Equipamento de oito portas, referência bruta | R$ 1.700,00 |
+| Frete e seguro internacional, estimativa | R$ 1.500,00 |
+| Provisão agregada de importação: 70% de R$ 3.200 | R$ 2.240,00 |
+| Desembaraço e transporte local | R$ 900,00 |
+| Integração inicial | R$ 1.200,00 |
+| Formalização e implantação | R$ 1.000,00 |
+| Contingência de 10% | R$ 854,00 |
+| Implantação | R$ 9.394,00 |
+| Reserva de três meses de custos fixos | R$ 3.096,00 |
+| Necessidade inicial total | R$ 12.490,00 |
 
-O produto indicado é [este anúncio do Alibaba](https://www.alibaba.com/product-detail/8-Door-Smart-Lockers-for-Gyms_1601673821852.html), agora documentado no PDF **lockerss.pdf**, de 12 páginas, enviado pelo grupo. Trata-se de uma captura comercial, não de uma proposta individual aceita pelo fornecedor.
+Fonte: elaboração própria com os parâmetros do projeto. Valores estimados, sem proposta comercial aceita.
 
-### Complemento: informações extraídas do PDF
+A contabilidade no Simples foi orçada em R$ 592,00 mensais, ponto médio do intervalo de R$ 486,00 a R$ 698,00 citado na seção 3.1. Para o Lucro Presumido, manteve-se a referência de R$ 1.122,00; para o Lucro Real, adotou-se R$ 1.500,00 como hipótese, com variação entre R$ 1.200,00 e R$ 2.000,00 na simulação. O custo de R$ 800,00 no Simples com IBS/CBS fora do DAS também é uma hipótese, por exigir apuração adicional.
 
-| Informação | Evidência no documento e tratamento |
+| Componente mensal | Valor |
 |---|---|
-| Configuração principal | Oito portas e dimensões externas de 1.800 × 850 × 460 mm, nas páginas 1, 2 e 4. Dimensões internas úteis não informadas. |
-| Preço exibido | R$ 1.475,09 por peça para 1–99 peças; R$ 1.341,39 a partir de 100 peças, na página 1. Comprar duas unidades permanece na mesma faixa anunciada. |
-| Condição de entrega | A página 1 diz que frete e prazo de entrega serão negociados. O preço exibido não estabelece, por si só, condição FOB nem custo entregue no Brasil. |
-| Estrutura | Metal/aço laminado a frio, fechadura eletrônica, montagem no piso, fechamento manual e chapa de 0,6–1,2 mm na tabela da página 2. O material promocional também menciona aço galvanizado e pintura a pó; especificação final precisa constar da proposta. |
-| Acesso | O material menciona senha/PIN, QR, RFID/cartões, biometria e controle remoto por aplicativo. São capacidades/opções anunciadas, não comprovação de que todas estejam incluídas no modelo de oito portas. |
-| Integração | A FAQ da página 10 afirma disponibilização de documentação API/SDK para clientes de projeto. Não informa preço de licença, acesso à API, hospedagem ou integração com pagamentos brasileiros. |
-| Idioma | FAQ da página 10: inglês e chinês como padrão; outros idiomas por customização. Português e seu custo precisam de confirmação. |
-| Garantia | FAQ da página 11: um ano para o hardware principal, suporte técnico de software sem prazo final anunciado e reposição gratuita de peças eletrônicas com falha em uso normal. Frete das peças, instalação local e prazo de atendimento não estão definidos. |
-| Embalagem | Ilustrações de caixas/reforços de madeira. Peso e dimensões embaladas não são apresentados como ficha numérica suficiente para cotar transporte. |
+| Limpeza terceirizada | R$ 200,00 |
+| Manutenção terceirizada | R$ 80,00 |
+| Deslocamentos | R$ 30,00 |
+| Plataforma | R$ 80,00 |
+| Administração | R$ 50,00 |
+| Contabilidade no Simples | R$ 592,00 |
+| Custos fixos de caixa | R$ 1.032,00 |
 
-As páginas 4–7 alternam o modelo de oito portas com ilustrações e FAQ de **12 portas**, inclusive reconhecimento facial. Portanto, a configuração comercial deve identificar explicitamente controladora, fechaduras, conectividade, acesso à API e licenças incluídas. O PDF não demonstra o fluxo completo de pagamento, liberação, expiração de acesso e gestão simultânea de mensalistas e usuários por hora.
+Energia, internet, instalação e adequações são fornecidas pela instituição, conforme a configuração do projeto. O repasse institucional continua indefinido e foi representado por 10% da receita no cenário central, com variação de zero a 20% nas simulações. Somam-se 3% para recebimentos e R$ 0,75 por sessão temporária. Foi mantida uma perda esperada de R$ 100,00 por ano por módulo para ocorrências, além de reposição eletrônica de R$ 800,00 a preços iniciais no mês 37. Essas provisões não correspondem a seguro contratado nem limitam eventual responsabilidade por danos.
 
-**Efeito no orçamento:** foi mantida a referência de compra de R$ 1.700 e a faixa de R$ 1.500–2.500 solicitadas pelo grupo. O anúncio dá suporte à ordem de grandeza, mas não substitui cotação com configuração e condição de entrega. A provisão de R$ 1.200 para integração também permanece: a existência anunciada de uma API reduz uma incerteza técnica, sem demonstrar custo de implantação igual a zero. Nenhum novo cálculo foi atribuído a funcionalidades ainda não confirmadas.
+O cenário de caixa pressupõe que o sócio não receba retiradas durante o período. O valor de seu trabalho é examinado separadamente, utilizando as 26 horas mensais e a referência de R$ 20,00 por hora apresentadas na seção técnica. Assim, o resultado financeiro pode ser comparado com uma avaliação que reconhece R$ 520,00 mensais de trabalho, mesmo sem pagamento. A depreciação física gerencial de 5% ao ano foi preservada para o módulo inteligente; a integração inicial é amortizada em sessenta meses. Esses valores afetam a comparação contábil no Lucro Real, mas a depreciação não representa saída de caixa mensal.
 
-Quanto à responsabilidade pelos objetos, a simulação segue sem seguro contratado, mas não transforma a cláusula de isenção em risco jurídico igual a zero. A eventual responsabilidade por defeito do serviço não é automaticamente afastada por essa cláusula. [CDC, especialmente arts. 14, 25 e 51, na publicação oficial do Ministério da Justiça](https://www.gov.br/mj/pt-br/assuntos/seus-direitos/consumidor/defesadoconsumidor/Biblioteca/manuais-upload/a-defesa-do-consumidor-na-argentina-e-no-peru-2007.pdf).
+### 3.4.2. Receita, preços e ponto de equilíbrio
 
-## 3. Investimento e custos operacionais
+O horário considerado é de segunda a sábado, das 7h30 às 21h30. Uma sessão temporária ocupa três horas, acrescidas de quinze minutos para troca, permitindo até quatro janelas por dia e por porta. O calendário utiliza os dias de segunda a sábado de cada ano, sem dedução específica de feriados ou bloqueios ainda não informados. A disponibilidade técnica foi fixada em 98%, e as férias foram representadas por fatores sazonais de procura.
 
-| Implantação | Cenário-base |
-|---|---:|
-| Armário bruto FOB | R$ 1.700 |
-| Frete e seguro internacional estimados | R$ 1.500 |
-| Provisão agregada de importação: 70% dos dois itens anteriores | R$ 2.240 |
-| Desembaraço e transporte local | R$ 900 |
-| Integração digital | R$ 1.200 |
-| Formalização, registros e implantação | R$ 1.000 |
-| Instalação cedida | R$ 0 |
-| Contingência de 10% | R$ 854 |
-| **Total** | **R$ 9.394** |
+Foram comparadas 180 combinações: tarifas de R$ 5,00, R$ 8,00, R$ 10,00, R$ 12,00 e R$ 15,00 por hora; mensalidades de R$ 120,00, R$ 180,00, R$ 240,00 e R$ 300,00; e as nove divisões possíveis das oito portas entre as duas modalidades. Na amostra de seleção, a combinação de maior VPL médio foi R$ 15,00 por hora, R$ 300,00 por mês e quatro portas para cada modalidade. A escolha se refere à grade avaliada. Como os preços vencedores estão no limite superior da grade, a pesquisa ainda não identifica o preço ótimo fora desses intervalos.
 
-A provisão de importação não é uma alíquota fiscal validada. Deve ser substituída pelo custo completo apurado com o produto, sua classificação fiscal e a operação efetiva. O valor de integração é mantido porque, embora o PDF mencione API/SDK, não comprova uma solução completa já incluída de reservas, acesso e pagamentos.
+A procura utiliza um ponto com público do porte da PUCRS, com 11.969 matrículas presenciais, e a proporção regional de 34,4% de estudantes da rede privada com renda per capita superior a dois salários mínimos, ambas informadas na análise de mercado. O alcance de 20% desse grupo, a conversão mensal de 0,5%, a conversão temporária de 6% e a frequência de quatro sessões mensais são hipóteses. Também são estimadas a elasticidade-preço, a maturação inicial e a expansão real de 3% ao ano da procura. Nenhuma dessas proporções foi medida por vendas no campus. Os dados de renda e curso, provenientes de bases distintas, não demonstram a interseção exata dos dois grupos.
 
-Custos fixos mensais, a preços iniciais:
+No cenário central, o primeiro ano apresenta 21,4 compartimentos-mês e 972,3 sessões, resultando em receita de R$ 50.167,05. A média mensal corresponde a 1,8 mensalistas e 81,0 sessões. As quantidades fracionárias representam valores esperados, e não contratos individuais.
 
-| Custo | Simples | Lucro real |
-|---|---:|---:|
-| Limpeza terceirizada | R$ 200 | R$ 200 |
-| Manutenção terceirizada | R$ 80 | R$ 80 |
-| Plataforma | R$ 80 | R$ 80 |
-| Administração | R$ 50 | R$ 50 |
-| Contabilidade estimada | R$ 200 | R$ 1.200 |
-| **Total fixo mensal** | **R$ 610** | **R$ 1.610** |
-
-Os preços contábeis são estimativas por regime. A referência para o lucro presumido foi R$ 700/mês, registrada na planilha, embora esse regime não integre a estratégia solicitada. A limitada unipessoal não deve receber automaticamente uma mensalidade de MEI. Como referência comercial, o fornecedor Contabilix divulga planos para serviços no Simples a partir de R$ 136, sujeitos à atividade e ao plano; a Contabilidade Zen indica faixa de R$ 150–300 para PJ simples sem funcionários e maior complexidade no lucro real. A estimativa de R$ 1.200 para o real não é uma proposta obtida para a UniLockers. [Tabela Contabilix](https://www.contabilix.com.br/wp-content/uploads/2026/04/Planos.pdf), [referência de mensalidades](https://www.contabilidadezen.com.br/blog/quanto-custa-mensalidade-contabilidade-online-2026/).
-
-Além dos fixos, entram 3% de meios de pagamento, o repasse institucional, R$ 0,75 por sessão, tributos, perdas e encargos de crédito. A reserva inicial corresponde a três meses dos fixos do regime de partida: R$ 4.830 no real e R$ 1.830 no Simples. Ao migrar, a reserva não foi liberada como distribuição ao sócio.
-
-## 4. Demanda: uso dos dados da segunda avaliação
-
-O trabalho informa 11.969 matrículas presenciais na PUCRS e participação de 34,4% de estudantes com renda domiciliar per capita acima de dois salários mínimos na rede privada da RMPA. Foi usado um campus desse porte como referência de escala, sem pressupor parceria com a PUCRS. Aplicar a proporção regional a esse campus é uma aproximação, não um resultado do levantamento por instituição.
-
-O modelo parte de aproximadamente 4.117 estudantes no segmento de renda e supõe que o ponto alcance 20% deles, ou **823,5 pessoas**. Daí decorrem duas hipóteses de conversão:
-
-- 0,5% de mensalistas ao preço de referência de R$ 180/mês;
-- 6% de usuários temporários, com quatro sessões mensais por usuário, ao preço de referência de R$ 8/hora.
-
-Esses percentuais não foram estimados no arquivo: são hipóteses que convertem mercado potencial em procura operacional. No Monte Carlo, alcance varia entre 10% e 35%, conversão mensal entre 0,2% e 0,9%, conversão temporária entre 3% e 10% e frequência entre duas e seis sessões por mês.
-
-As procuras reagem ao preço pela expressão `procura = procura de referência × (preço / referência)^(−elasticidade)`. A elasticidade tem distribuição triangular de 0,3 a 1,8, com moda 0,9. Assim, cobrar R$ 15/hora reduz a quantidade procurada em relação a R$ 8/hora. Não há evidência empírica suficiente para afirmar que essa faixa de elasticidade descreve o público real. Também não foi estimada a migração de usuários entre mensalidade e uso temporário quando os preços relativos mudam.
-
-Sessões padrão duram três horas, com quinze minutos de intervalo. Nas 14 horas de acesso cabem quatro janelas por porta/dia. As quatro portas temporárias oferecem 16 sessões/dia, antes de indisponibilidade. A cobrança neste exercício é a tarifa horária multiplicada por três: a sessão custa R$ 45 no preço de R$ 15/hora. Não há tarifa diária ou desconto automático por permanência prolongada.
-
-O mix fica fixo ao longo do estudo e as portas mensais não são revendidas por hora durante contratos ativos. Pedidos por janela seguem Poisson e são limitados à capacidade. A disponibilidade é de 98%. Mantiveram-se sazonalidade acadêmica estimada, rampa de 50% a 100% em seis meses e crescimento real de procura de 3% ao ano.
-
-## 5. Comparação comercial
-
-Cada linha mostra a melhor mensalidade e divisão encontradas para a tarifa indicada. A escolha foi feita em 5.000 trajetórias e avaliada em outras 5.000, mantendo o cenário de começar no real e migrar após um ano. Nesta tabela, não há dívida, para comparar o negócio antes do financiamento.
-
-| Tarifa/hora | Mensalidade | Portas mensais/temporárias | VPL médio na validação | VPL ≥ 0 e sem insuficiência de caixa |
-|---:|---:|---:|---:|---:|
-| R$ 5,00 | R$ 300,00 | 2/6 | R$ 95.268,89 | 96,88% |
-| R$ 8,00 | R$ 300,00 | 3/5 | R$ 106.792,54 | 98,24% |
-| R$ 10,00 | R$ 300,00 | 3/5 | R$ 110.841,98 | 98,32% |
-| R$ 12,00 | R$ 300,00 | 3/5 | R$ 113.648,57 | 98,00% |
-| R$ 15,00 | R$ 300,00 | 4/4 | R$ 117.346,08 | 97,58% |
-
-R$ 15/hora maximiza o VPL médio da grade. Preços intermediários apresentaram indicadores de caixa ligeiramente melhores em algumas comparações. A diferença entre R$ 12 e R$ 15 não permite dispensar o teste comercial: a aceitação efetiva pode alterar a ordem. Não há recomendação de limitar o preço ao mínimo de equilíbrio calculado anteriormente.
-
-## 6. Financiamento de 100%, 75%, 50%, 10% e 0%
-
-A referência pública da Finep para micro e pequenas empresas é de até TR + 6,068% a.a., até 96 meses totais e até 24 meses de carência. Isso não confirma aprovação, valor mínimo operacional, garantias ou financiamento de todos os gastos do orçamento. [Finep — crédito por agentes](https://www.finep.gov.br/credito-operado-por-agentes).
-
-Adotaram-se 60 meses SAC, com 12 meses de carência apenas do principal e juros pagos desde o início. A TR de referência de 0,1693% ao mês, divulgada pelo BCB para um período de novembro de 2026, combinada com a remuneração anual, corresponde a aproximadamente **8,24% a.a.**, antes dos demais encargos. Essa repetição da TR é uma referência de cálculo, não previsão da taxa futura; no Monte Carlo ela varia. [BCB, Comunicado 46.259](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=46259&tipo=Comunicado).
-
-A tabela pública do BRDE informa cadastro de R$ 500 para micro e pequenas empresas, análise de 0,4% e fiscalização de 0,4% a 1,5%, além de outras tarifas conforme o caso. Para o exercício foram usados R$ 500 iniciais, 2% variáveis iniciais e R$ 500 de renovação anual enquanto houver dívida. Dos 2%, parte é reserva estimada para garantias e encargos, não uma tarifa única publicada. Reduções do Jovem Empreendedor não foram presumidas. [Tarifas do BRDE](https://www.brde.com.br/area-do-cliente/tarifas/).
-
-| Aporte financiado | Recursos próprios, base | Dívida com encargos, base | Juros no primeiro mês, base | Primeira parcela com amortização, base | Custo efetivo anual estimado | Insuficiência de caixa na validação |
-|---:|---:|---:|---:|---:|---:|---:|
-| 100,00% | R$ 0,00 | R$ 15.024,49 | R$ 99,50 | R$ 412,51 | 15,32% | 4,36% |
-| 75,00% | R$ 3.556,00 | R$ 11.395,92 | R$ 75,47 | R$ 312,89 | 17,35% | 3,90% |
-| 50,00% | R$ 7.112,00 | R$ 7.767,35 | R$ 51,44 | R$ 213,26 | 21,34% | 3,58% |
-| 10,00% | R$ 12.801,60 | R$ 1.961,63 | R$ 12,99 | R$ 53,86 | 64,85% | 3,22% |
-| 0,00% | R$ 14.224,00 | R$ 0,00 | R$ 0,00 | R$ 0,00 | Não se aplica | 2,42% |
-
-O percentual financiado incide sobre o aporte antes de encargos. O principal inclui os custos iniciais financiados, por isso pode exceder a parcela correspondente do aporte. No caso de 100%, o aporte próprio inicial é zero; não se calcula uma TIR ou payback do capital próprio sobre denominador zero. Ainda pode haver necessidade de aporte adicional se faltar caixa.
-
-O custo efetivo anual estimado foi calculado pela taxa interna dos fluxos líquidos do empréstimo: entrada disponível para investir e pagamentos de juros, principal e tarifas consideradas. Ele não é um CET bancário contratado. Como há custos fixos de cadastro e renovação, financiar um valor pequeno pode ter custo percentual elevado, mesmo usando a mesma taxa básica.
-
-Financiar 100% de compra, giro e encargos é uma hipótese solicitada para comparação. A elegibilidade desse pacote não foi confirmada. O BRDE Jovem Empreendedor admite equipamentos importados e o perfil de idade informado pelo grupo, mas limita o giro a 20% da receita anterior e remete a taxa final à análise de crédito. Sem receita anterior, não se deve pressupor financiamento do giro nessa linha. [BRDE Jovem Empreendedor](https://www.brde.com.br/linha-financiamento/jovem-empreendedor/).
-
-Não foi encontrado CET individual aprovado para a UniLockers. O modelo entrega taxa, indexador, cronograma e encargos identificados; não os apresenta como proposta bancária. Fundos garantidores, garantias exigidas e eventuais seguros prestamistas continuam sujeitos à proposta do agente.
-
-### Adequação das instituições à fase atual
-
-| Instituição e caminho | Aplicação à UniLockers sem CNPJ e sem receita |
+| Mensalistas ativos a R$ 300 | Sessões de 3 h/mês para equilíbrio operacional³ |
 |---|---|
-| BRDE Jovem Empreendedor | O perfil de 18–29 anos e a previsão de equipamentos importados tornam a linha pertinente à consulta inicial. Aprovação, garantia, ticket mínimo e taxa precisam de análise. O giro vinculado à receita anterior não deve ser presumido disponível. |
-| Finep por agentes, incluindo BRDE/Badesul | Exige enquadramento em projeto apoiável de inovação e análise do agente. A taxa pública usada na simulação não demonstra que um pedido de cerca de R$ 14 mil seria contratado. Comprar um armário inteligente pronto não comprova, sozinho, mérito de inovação. |
-| Badesul: Inovacred e fundos para startups | O Badesul divulga apoio à inovação e investimento por fundos. Não foi confirmada contratação de dívida para esse orçamento, empresa pré-operacional e equipamento. Fundos envolvem participação no negócio e seleção por gestores. |
-| BNDES Microcrédito | Alternativa a avaliar com operador local. Taxa, prazo, garantia e aceitação da operação específica são definidos pelo agente. O teto foi usado apenas como estresse. |
-| BNDES Finame | A modalidade ordinária atende máquinas e equipamentos nacionais credenciados. Não foi usada para presumir financiamento do módulo chinês indicado. |
+| 0 | 28,4 |
+| 1 | 21,6 |
+| 2 | 14,8 |
+| 3 | 8,0 |
+| 4 | 1,2 |
 
-Referências: [BRDE Jovem Empreendedor](https://www.brde.com.br/linha-financiamento/jovem-empreendedor/), [Finep por agentes](https://www.finep.gov.br/credito-operado-por-agentes), [Badesul Inovacred](https://www.badesul.com.br/empresa/inovacred-), [Badesul fundos para startups](https://www.badesul.com.br/inovacao/fundos-invest-startups), [BNDES Finame](https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/bndes-finame).
+³ Mês de referência de 2027, sem dívida, sem retirada, antes de recuperar o investimento. Inclui perda esperada de R$ 100,00 ao ano. Uma sessão de três horas custa R$ 45,00. Quantidades devem ser arredondadas para cima no planejamento de vendas. Fonte: elaboração própria.
 
-Para o piloto, a prioridade de consulta é o BRDE Jovem Empreendedor e operadores de microcrédito, comparando custo efetivo e garantias com o uso de recursos próprios. A Finep e o Badesul ficam como alternativas condicionadas à estruturação e ao enquadramento do projeto. Nenhuma destas linhas foi tratada como dinheiro já disponível, nem foi enviado pedido de crédito em nome do grupo.
+O ponto de equilíbrio operacional cobre os desembolsos do mês. A recuperação do investimento com a taxa de retorno exige receita adicional. No fluxo de sessenta meses, mantendo os preços e a trajetória de custos, a procura pode cair até aproximadamente 33,90% do cenário central antes de o VPL atingir zero. Nesse limite, a receita do primeiro ano é de R$ 17.179,16, com média de 0,6 mensalistas e 27,6 sessões por mês. Trata-se de uma redução proporcional da procura antes da limitação de capacidade, sem alterar o repasse e os demais custos.
 
-### Crédito caro: teste de estresse
+### 3.4.3. Tributação e comparação entre regimes
 
-O BNDES divulga teto de juros de até 4% ao mês para microcrédito. Foi simulado esse teto, com prazo hipotético de 36 meses SAC, sem carência, para medir o risco de contratar crédito caro. O prazo não é uma oferta confirmada, e as tarifas foram mantidas apenas para comparação com a estrutura anterior. [BNDES Microcrédito](https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/bndes-microcredito-empreendedor).
+Na hipótese de locação pura de bens móveis, a apuração do Simples considera o Anexo III com exclusão da parcela de ISS. Foram aplicadas as partilhas previstas para cada ano da transição. Na primeira faixa de receita, a carga efetiva adotada é de 3,99% em 2027 e 2028, 4,191% em 2029, 4,392% em 2030 e 4,593% em 2031. A alíquota efetiva também depende da receita acumulada em doze meses e da parcela a deduzir. A incidência de serviços de guarda ou custódia exigiria outra análise da operação e da segregação das receitas. [LC 123/2006](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html), [partilhas alteradas pela LC 227/2026](https://legis.senado.gov.br/norma/40180341/publicacao/40181117).
 
-| Participação financiada | Probabilidade condicional de insuficiência de caixa |
-|---:|---:|
-| 100,00% | 32,32% |
-| 75,00% | 21,92% |
-| 50,00% | 14,02% |
-| 10,00% | 4,30% |
-| 0,00% | 2,42% |
+Fora do Simples integral, os cenários utilizam IBS/CBS por fora da base, com preços finais ao estudante mantidos iguais. Portanto, uma alíquota de consumo de r corresponde a r/(1+r) do recebimento. Para 2027 e 2028, utilizou-se CBS de 11,2% e IBS de 0,1%, considerando a referência de CBS de 11,3% calculada pelo TCU e o ajuste transitório. Para 2029, 2030 e 2031, os totais de 13,2%, 15% e 16,9% foram mantidos como hipóteses de planejamento extraídas da seção legal. A definição das alíquotas futuras permanece sujeita aos atos aplicáveis. [TCU, cálculo de referência](https://sites.tcu.gov.br/reforma-tributaria/visao-cbs-2027.html), [LC 214/2025](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
 
-O resultado mostra que a taxa e o cronograma podem ser mais importantes que o simples percentual financiado. Um empréstimo com VPL final positivo pode exigir dinheiro adicional nos primeiros meses. A simulação continua após a falta de caixa; esses caminhos não podem ser tratados como operação viável sem fonte adicional de liquidez.
+Não foi reconhecido crédito de importação sem documento que identifique o tributo recuperável. O aproveitamento de créditos pode melhorar os regimes regulares, mas sua entrada em caixa depende da documentação, da apuração e da compensação ou do ressarcimento cabível. Na sensibilidade com crédito inicial identificado de R$ 1.000,00, o VPL determinístico do Lucro Real por cinco anos chega a R$ 39.222,28, ainda abaixo do Simples nas demais premissas adotadas.
 
-## 7. Quando sair do lucro real
+| Regime | VPL determinístico | VPL médio simulado | VPL positivo na validação |
+|---|---|---|---|
+| Simples desde a abertura | R$ 113.663,45 | R$ 124.690,85 | 99,32% |
+| Real em 2027 e Simples de 2028 em diante | R$ 95.347,83 | R$ 104.427,89 | 97,54% |
+| Real por dois anos e depois Simples | R$ 79.684,19 | R$ 87.328,35 | 95,10% |
+| Real por três anos e depois Simples | R$ 65.002,18 | R$ 71.317,37 | 91,38% |
+| Real por quatro anos e depois Simples | R$ 51.291,20 | R$ 56.379,49 | 86,18% |
+| Lucro Real nos cinco anos | R$ 38.479,34 | R$ 42.445,36 | 79,28% |
+| Lucro Presumido nos cinco anos | R$ 58.122,09 | R$ 64.073,14 | 87,52% |
+| Simples com IBS/CBS no regime regular | R$ 81.220,07 | R$ 86.571,35 | 95,44% |
 
-A comparação usa 50% de financiamento, os mesmos preços e o mesmo conjunto de trajetórias. Cada estratégia é escolhida antes de conhecer as realizações futuras.
+Fonte: elaboração própria. Mesmos preços e procura, um módulo e ausência de dívida. A reserva inicial muda com o custo contábil de cada regime. Simulações condicionais às distribuições adotadas.
 
-| Estratégia | VPL médio na validação | Tributos médios em cinco anos | Insuficiência de caixa |
-|---|---:|---:|---:|
-| Simples desde a abertura | R$ 139.487,42 | R$ 20.544,90 | 0,00% |
-| Real por 1 ano(s); Simples no ano 2 | R$ 116.864,73 | R$ 29.529,77 | 3,58% |
-| Real por 2 ano(s); Simples no ano 3 | R$ 97.452,42 | R$ 41.137,86 | 6,78% |
-| Real por 3 ano(s); Simples no ano 4 | R$ 79.762,06 | R$ 53.786,51 | 8,12% |
-| Real por 4 ano(s); Simples no ano 5 | R$ 63.648,34 | R$ 67.543,74 | 8,62% |
-| Real por cinco anos | R$ 48.941,97 | R$ 82.557,44 | 8,80% |
+Nos períodos de Lucro Real, o modelo apura IRPJ e CSLL por trimestre e controla a compensação de prejuízos anteriores até 30% do resultado positivo ajustado. O estoque não expira automaticamente após cinco anos. A passagem ao Simples ocorre apenas em marcos de ano-calendário e não permite usar esse estoque para reduzir o DAS. A apuração foi simplificada, sem diferenças específicas entre as bases de IRPJ e CSLL. Os tributos são reservados no período de apuração, sem reproduzir cada data de vencimento. [Receita Federal, compensação de prejuízos](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/ecf/perguntas-e-respostas-da-pessoa-juridica-2025.pdf).
 
-**Dentro da sequência de começar no real, a melhor migração testada foi no início do segundo ano. Na comparação completa, começar no Simples foi melhor.** O lucro real não ganhou apenas porque há investimento inicial: a compra dos bens não é despesa integral imediata, a compensação é limitada e a contabilidade custa mais.
+O Simples desde a abertura apresentou o maior VPL médio na amostra de seleção. Se a empresa iniciar no Lucro Real, a primeira migração anual testada, em janeiro de 2028, foi a alternativa mais favorável entre as sequências que começam nesse regime. O prejuízo inicial, por si só, não justifica o Lucro Real: a economia tributária precisa superar o custo contábil adicional. A decisão deverá ser refeita se houver investimentos maiores, créditos comprovados ou mudança relevante na composição dos clientes.
 
-O modelo apura IRPJ/CSLL trimestralmente, com pagamento simplificado no encerramento do trimestre. Usa IRPJ de 15%, adicional de 10% acima de R$ 60 mil de base trimestral e CSLL de 9%, sob bases iguais por simplificação. Controla prejuízos anteriores e limita sua utilização a 30% do lucro positivo ajustado. A soma compensada no cenário-base foi de **R$ 1.203,51**, dedução da base tributável, não dinheiro devolvido ao negócio. O saldo não vira abatimento do DAS quando ocorre a migração. [Receita Federal — perguntas e respostas PJ](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/ecf/perguntas-e-respostas-da-pessoa-juridica-2025.pdf).
+### 3.4.4. Fluxo de caixa e recuperação do capital
 
-O Simples usa a tabela do Anexo III e RBT12, com anualização nos primeiros meses. É uma hipótese de enquadramento do serviço indicado no trabalho, ainda sujeita a confirmação. [LC 123 e tabelas](https://legis.senado.gov.br/norma/572878/publicacao/34621013).
+Adota-se taxa mínima de atratividade de 12% real ao ano e inflação de 4% no cenário central, resultando em desconto nominal de 16,48% ao ano. Preços e custos são reajustados anualmente pela inflação. O VPL deduz a implantação e a reserva inicial e desconta os fluxos mensais. Não se acrescentam venda do equipamento nem liberação da reserva no fim do quinto ano.
 
-### Limite tributário material desta projeção
+| Ano | Receita bruta | Custos fixos | Custos variáveis¹ | DAS | Reposição | Caixa gerado² |
+|---|---|---|---|---|---|---|
+| 2027 | R$ 50.167,05 | R$ 12.384,00 | R$ 7.350,91 | R$ 2.001,67 | R$ 0,00 | R$ 28.430,47 |
+| 2028 | R$ 59.912,64 | R$ 12.879,36 | R$ 8.765,02 | R$ 2.390,51 | R$ 0,00 | R$ 35.877,75 |
+| 2029 | R$ 64.041,25 | R$ 13.394,53 | R$ 9.366,45 | R$ 2.683,97 | R$ 0,00 | R$ 38.596,30 |
+| 2030 | R$ 68.437,70 | R$ 13.930,32 | R$ 10.006,85 | R$ 3.005,78 | R$ 899,89 | R$ 40.594,87 |
+| 2031 | R$ 73.079,57 | R$ 14.487,53 | R$ 10.682,90 | R$ 3.356,54 | R$ 0,00 | R$ 44.552,60 |
 
-O horizonte 2027–2031 atravessa a transição da tributação do consumo. Para evitar tratar as antigas regras de PIS/Cofins/ISS como certeza por cinco anos, foi usada no lucro real uma **carga efetiva líquida sobre consumo de 15% da receita**, variando entre 12% e 20% no Monte Carlo. Esse percentual representa conjuntamente a incerteza de CBS/IBS/ISS e créditos; não é uma alíquota legal apurada para a UniLockers. A escolha precisa ser revisada com classificação, contratos e regras vigentes. Portanto, a data de migração é a melhor das alternativas modeladas, não uma conclusão tributária definitiva. [Calendário de transição da Receita Federal](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/entenda/entenda-a-reforma-tributaria-do-consumo).
+¹ Repasse institucional, recebimentos, custo das sessões e provisão por ocorrências. ² Após tributos e reposições, sem dívida e sem retirada do sócio. A reposição do mês 37 aparece em 2030. Fonte: elaboração própria.
 
-A depreciação física de 5% a.a. atende à orientação gerencial do grupo. Foi usada também como hipótese da apuração, sem afirmar sua aceitação fiscal automática. Formalização é tratada como despesa fiscal inicial; o caixa desse gasto já saiu no investimento e não é desembolsado uma segunda vez. Capital de giro não foi deduzido como despesa. Integração foi amortizada em 60 meses, hipótese a validar.
+O VPL determinístico é de R$ 113.663,45. O payback simples e o descontado ocorrem no mês 7, considerando o primeiro cruzamento que permanece não negativo até o fim do horizonte. O prazo inferior a sessenta meses atende à meta do projeto sob essas premissas. A retenção do caixa para reinvestimento não corresponde a dividendos já recebidos pelo sócio; a recuperação calculada mede a geração de recursos disponíveis pela operação.
 
-Créditos sobre importação e aquisição de ativos não foram apurados individualmente: o orçamento inicial não atribui uma recuperação específica por regime. A carga líquida de consumo é um parâmetro agregado e não substitui essa apuração. A vantagem do Simples nesta comparação é influenciada pela diferença estimada de honorários e de carga líquida; não deve ser generalizada para qualquer empresa. Uma proposta contábil e a tributação efetiva da importação podem mudar essa comparação.
+### 3.4.5. Risco e simulação de Monte Carlo
 
-As opções de regime dependem das janelas e requisitos legais. O modelo testa marcos anuais de planejamento, não presume liberdade para migrar em qualquer mês nem autorização para optar depois do prazo. Não há distribuição de lucro, retirada ou remuneração do sócio no fluxo, conforme orientação recebida.
+Foram geradas 10.000 trajetórias mensais, com semente 20261116. As primeiras 5.000 serviram para selecionar preços e distribuição das portas; as outras 5.000 avaliaram a alternativa escolhida. A opção comercial é fixada antes de observar a amostra de validação. O gráfico apresenta 120 trajetórias dessa amostra, a média, os percentis 5 e 95 e a distribuição do resultado no mês 60.
 
-## 8. Fluxo anual do cenário-base
 
-| Ano | Receita bruta | Tributos | Parcelas | Caixa após dívida | Caixa retido ao final |
-|---:|---:|---:|---:|---:|---:|
-| 1 | R$ 50.167,05 | R$ 10.678,92 | R$ 617,28 | R$ 11.699,93 | R$ 16.529,93 |
-| 2 | R$ 59.912,64 | R$ 3.594,76 | R$ 2.488,39 | R$ 36.931,68 | R$ 53.461,61 |
-| 3 | R$ 64.041,25 | R$ 3.842,48 | R$ 2.334,07 | R$ 40.040,15 | R$ 93.501,76 |
-| 4 | R$ 68.437,70 | R$ 4.106,26 | R$ 2.179,75 | R$ 42.448,52 | R$ 135.950,28 |
-| 5 | R$ 73.079,57 | R$ 4.384,77 | R$ 2.025,43 | R$ 47.423,11 | R$ 183.373,39 |
 
-Há R$ 4.830 de caixa inicial de giro. Cadastro renovado e perdas esperadas entram nas despesas, além dos tributos e parcelas mostrados. O resultado econômico para alguém que exija remuneração imediata pelo trabalho seria menor: o caixa apresentado pressupõe dedicação sem retirada durante a projeção.
+![Monte Carlo de preços, distribuição de portas e trajetórias de validação](Monte_Carlo_revisado.png)
 
-## 9. Escala e contrato
+As simulações variam preço de compra, frete, custos operacionais, honorários, repasse, inflação, conversão, frequência, elasticidade e ocorrências. A procura temporária é limitada pelas janelas disponíveis, e a mensal pelas portas reservadas. As combinações são comparadas com os mesmos sorteios de procura e custos, reduzindo a influência de diferenças aleatórias na escolha. As distribuições e seus intervalos constam da memória de cálculo.
 
-**Configuração de expansão esclarecida pelo grupo:** cada módulo ficará em uma localização diferente, por exemplo um na PUCRS e outro na Unisinos. A tabela abaixo de novos pontos é a referência pertinente. As instituições são exemplos de implantação; não se presume contrato ou autorização de uso do espaço.
+Na validação, o VPL médio é de R$ 124.690,85, com mediana de R$ 113.861,79. O percentil 10 é de R$ 41.384,71, e o percentil 90, de R$ 223.261,75. Em 99,32% das trajetórias o VPL é não negativo; em 0,06% ocorre falta de caixa mesmo com a reserva inicial. Ao valorar o trabalho do sócio em R$ 520,00 mensais, reajustados pela inflação, o VPL médio econômico é de R$ 101.512,40, positivo em 95,82% da amostra. Esse custo imputado não foi deduzido como despesa fiscal nem tratado como retirada efetiva.
 
-| Módulos | Portas | Aporte total, base | VPL do fluxo após dívida, base |
-|---:|---:|---:|---:|
-| 1 | 8 | R$ 14.224,00 | R$ 108.192,85 |
-| 2 | 16 | R$ 21.048,00 | R$ 246.913,12 |
-| 3 | 24 | R$ 27.872,00 | R$ 384.031,06 |
+Esses percentuais são frequências dentro do modelo. A faixa central do gráfico representa dispersão simulada, e não intervalo de confiança de vendas observadas. Uma procura inferior aos limites assumidos pode produzir perdas maiores. No teste determinístico com metade da procura central, o VPL cai para R$ 28.147,97; com apenas um quarto, chega a R$ -15.608,95 e há insuficiência de caixa. A viabilidade comercial permanece dependente da procura e da disposição a pagar que forem verificadas no piloto.
 
-Essa comparação pressupõe **um novo ponto com procura equivalente para cada módulo**, capacidade de compartilhar plataforma, administração e contabilidade e limpeza/manutenção crescendo por módulo. Não inclui contratação adicional de gestor ou rota logística: esses custos precisam ser acrescentados se a operação exigir. Comprar mais portas para o mesmo público não multiplica a procura e não produz os valores dessa tabela.
+### 3.4.6. Financiamento e expansão
 
-Como comparação auxiliar, fora do plano de expansão esclarecido pelo grupo, também se calculou a compra de mais módulos **no mesmo ponto, sem aumentar a procura**, mantendo quatro portas mensais e quatro temporárias por módulo. A capacidade adicional reduz pedidos recusados, mas não gera novos interessados:
+Foram recalculadas participações de financiamento de 100%, 75%, 50%, 10% e zero. A referência de custo mantém TR mensal de 0,1693% acrescida de 6,068% ao ano, prazo de sessenta meses e doze meses de carência de principal, com juros pagos durante a carência e amortização SAC nos 48 meses seguintes. A composição acrescenta R$ 500,00 de encargo inicial, 2% sobre o principal e R$ 500,00 anuais enquanto existir saldo. Esses encargos e prazos são hipóteses de cálculo, não uma proposta de uma única instituição. O custo efetivo estimado foi obtido pelos fluxos de recebimento líquido e pagamentos, sem equivaler a CET bancário contratado.
 
-| Módulos no mesmo ponto | Receita do primeiro ano | VPL após dívida, base |
-|---:|---:|---:|
-| 1 | R$ 50.167,05 | R$ 108.192,85 |
-| 2 | R$ 50.688,15 | R$ 91.575,91 |
-| 3 | R$ 50.691,19 | R$ 72.598,04 |
+| Parcela financiada | Aporte próprio | Principal com encargos | Primeira parcela após carência | Custo efetivo estimado a.a. | Falta de caixa na validação |
+|---|---|---|---|---|---|
+| 100,00% | R$ 0,00 | R$ 13.255,10 | R$ 363,93 | 16,16% | 0,72% |
+| 75,00% | R$ 3.122,50 | R$ 10.068,88 | R$ 276,45 | 18,46% | 0,46% |
+| 50,00% | R$ 6.245,00 | R$ 6.882,65 | R$ 188,97 | 22,98% | 0,30% |
+| 10,00% | R$ 11.241,00 | R$ 1.784,69 | R$ 49,00 | 71,89% | 0,20% |
+| 0,00% | R$ 12.490,00 | R$ 0,00 | R$ 0,00 | Não se aplica | 0,06% |
 
-Nesse teste auxiliar, o segundo módulo aumenta a receita do primeiro ano em apenas cerca de R$ 521 e reduz o VPL em aproximadamente R$ 16,6 mil frente ao módulo único. Essa restrição de procura compartilhada não descreve o plano de um módulo em cada campus.
+O custo de encargos fixos pesa mais nos empréstimos pequenos, o que explica a taxa efetiva elevada quando se financia somente 10% do investimento. Também foi mantido o estresse de 4% ao mês por 36 meses: com 100% financiado, a primeira parcela fica em R$ 898,40 e a falta de caixa ocorre em 8,88% da validação. A taxa de 4% ao mês é um parâmetro de estresse, sem oferta de banco atribuída.
 
-Para PUCRS + Unisinos, a estimativa anterior de R$ 21.048 de aporte total e R$ 246.913,12 de VPL após dívida é um **cenário ilustrativo de dois pontos com procura equivalente**, sob a mesma política de 50% financiado e real por um ano. Não é uma previsão calibrada para as duas universidades. Precisa de procura, preços/mix, repasse, início de operação e custos de atendimento próprios por campus. A parcela de renda usada para um campus de referência não foi validada para cada instituição.
+Com 100% de financiamento, o aporte inicial próprio é zero, mas permanecem juros, amortizações e risco de necessidade de recursos adicionais. Nessa configuração, o payback do aporte próprio não é definido. A comparação da viabilidade do equipamento utiliza o fluxo do projeto sem dívida, enquanto a escolha do financiamento considera os encargos e a capacidade de pagamento.
 
-A plataforma e a administração podem compartilhar despesas, conforme seus contratos; limpeza e manutenção já crescem por módulo. Deslocamentos, atendimentos emergenciais, integração e licença por equipamento podem acrescentar custos não cotados. Frete, desembaraço e integração compartilhados no orçamento dependem de uma compra e implantação compatíveis com essa economia. A demanda dos campi também pode cair conjuntamente nas férias e recessos: locais diferentes não tornam todos os riscos independentes.
+O BRDE Jovem Empreendedor é compatível com o perfil etário informado e menciona equipamentos nacionais e importados. A taxa depende da análise de crédito, e o capital de giro tem limite vinculado à receita do exercício anterior, restringindo a hipótese de financiar toda a reserva para uma empresa sem faturamento. Finep Inovacred e as operações de inovação do Badesul dependem de enquadramento do projeto e aprovação pelo agente. A taxa pública da Finep utilizada como referência não comprova que a simples compra do armário seja financiável. O Cartão BNDES exige itens credenciados e, em regra, fabricação nacional, portanto não foi presumido como fonte para importar este equipamento. Nenhum crédito foi considerado aprovado. [BRDE](https://brde.com.br/linha-financiamento/jovem-empreendedor/), [Finep](https://www.finep.gov.br/credito-operado-por-agentes), [Badesul](https://www.badesul.com.br/produtos/inovacao), [Cartão BNDES](https://www.cartaobndes.gov.br/cartaobndes/PaginasCartao/FAQ.ASP?Acao=R&Cod=91%2C91&T=2).
 
-Como o prazo de uso do campus segue indefinido, também foi calculada interrupção no final de cada prazo abaixo, com quitação imediata do saldo devedor e sem receitas posteriores, venda do equipamento ou recuperação do giro:
+A expansão considera um módulo em cada localização. Foram mantidas as matrículas da análise de mercado para distinguir os dois campi da Unisinos: 2.147 em Porto Alegre e 7.179 em São Leopoldo. Esses números servem apenas como escala de público; não comprovam fluxo no ponto de instalação nem parceria com as instituições.
 
-| Prazo efetivo da operação | VPL com interrupção, cenário-base |
-|---:|---:|
-| 12 meses | R$ -3.133,55 |
-| 24 meses | R$ 28.409,32 |
-| 36 meses | R$ 57.391,77 |
-| 60 meses | R$ 108.192,85 |
+| Configuração ilustrativa | Investimento total | Receita no primeiro ano | VPL determinístico |
+|---|---|---|---|
+| PUCRS de referência | R$ 12.490,00 | R$ 50.167,05 | R$ 113.663,45 |
+| PUCRS + Unisinos Porto Alegre | R$ 20.724,00 | R$ 59.259,75 | R$ 122.151,49 |
+| PUCRS + Unisinos São Leopoldo | R$ 20.724,00 | R$ 80.504,89 | R$ 195.655,89 |
 
-É um teste conservador de prazo, não uma previsão de encerramento. Uma possibilidade real de realocar o módulo deve ser orçada com transporte, tempo sem receita e novo contrato. A negociação do espaço continua sendo uma condição necessária para confiar no horizonte de cinco anos.
+Fonte: elaboração própria. Mesmos preços e divisão de portas, ambos os módulos desde o início de 2027, sem dívida. Administração, plataforma e contabilidade são compartilhadas; limpeza, manutenção, transporte e integração crescem por módulo. A economia no desembaraço depende de compra conjunta; não foi assumido desconto no equipamento.
 
-## 10. O que significa o Monte Carlo entregue
+Na simulação de dois pontos, a procura local é sorteada separadamente, com calendário e fatores macroeconômicos comuns. O segundo módulo no campus de Porto Alegre acrescenta VPL médio de R$ 9.643,87, mas seu percentil 10 incremental é de R$ -6.466,80. Há 27,02% de resultados incrementais negativos nesse teste. Para São Leopoldo, o acréscimo médio é de R$ 88.804,01. Uma correlação maior entre as quedas de procura pode reduzir o benefício de diversificação e precisa ser avaliada após o piloto.
 
-Foram geradas **10.000 trajetórias de 60 meses**, com semente 20261115. Metade foi usada para selecionar a combinação comercial e a estratégia; a outra metade foi reservada para validação. Os mixes e políticas enfrentam as mesmas trajetórias de demanda e custos. A demanda temporária foi reduzida por afinamento de Poisson quando o preço aumenta, preservando comparabilidade entre tarifas.
+A compra do segundo módulo depende, portanto, do ponto escolhido e do custo para atendê-lo. Se o novo campus também exigir 26 horas mensais de trabalho, esse custo deverá ser acrescido antes da decisão. O cenário central sustenta a implantação de um módulo inteligente, com retorno superior à meta adotada, condicionado à confirmação do custo entregue, da integração, do contrato com a instituição e das primeiras vendas. A expansão deve ocorrer após medir a procura no segundo local e demonstrar contribuição incremental suficiente para seus custos.
 
-Além de preços, alcance, conversão e frequência, variam custos, frete, preço do armário, inflação, repasse, TR, incidentes e procura mensal. Cada trajetória recebe elasticidades persistentes, choque mensal de demanda de média 1 e disponibilidade por janela de 98%. A inadimplência não foi modelada porque o recebimento é antecipado no mês do uso. Não se supõe retirada de lucro além dos pagamentos operacionais e da dívida.
 
-Na validação do cenário ativo com 50% de crédito de referência, **96,42% das trajetórias tiveram VPL não negativo e não precisaram de caixa adicional**. Esse percentual é condicional às distribuições escolhidas. Ele não valida comercialmente a ideia, não inclui todos os riscos e não constitui probabilidade empírica de sucesso da empresa. O mercado potencial do trabalho não elimina a incerteza sobre adesão e preço.
+# Revisão de coerência da UniLockers
 
-O contrato indefinido e a aceitação de R$ 300/mês são riscos relevantes ainda não calibrados. Um corte inesperado de acesso, novas exigências de integração ou preço contábil maior podem alterar os resultados. Por isso, os valores devem orientar negociação e piloto, sem serem usados como retorno garantido.
+Referência: 15 de novembro de 2026. Documento recebido: 3ª Avaliação de Botas.md. Cenário principal confirmado: inteligente de oito portas.
 
-## 11. Planilha entregue e verificações
+## O que muda nos resultados
 
-A nova planilha possui Resumo, Fluxo mensal, Preços e mix, Financiamento, Regimes, Premissas e Monte Carlo. O fluxo-base contém fórmulas para receitas, reajustes, dívida SAC, tributação, compensação e caixa. Entradas amarelas recalculam o fluxo. Os resultados de comparação e do Monte Carlo são capturas identificadas; há controle de desatualização quando suas premissas são alteradas. É necessário refazer as simulações para gerar novas comparações.
+O investimento central é R$ 12.490,00, incluindo R$ 3.096,00 de reserva. A receita central do primeiro ano permanece igual à do modelo anterior, R$ 50.167,05, permitindo identificar o efeito das novas despesas e do enquadramento fiscal. O cenário principal passa a comparar o projeto sem dívida no Simples desde a abertura. A referência antiga de um ano no Lucro Real permanece como alternativa, com VPL determinístico de R$ 95.347,83.
 
-Receitas, depreciação, tributos, dívida, prejuízos e caixa foram reconciliados entre cálculos independentes e planilha em meses representativos, inclusive virada de regime e reposição. Foram testados alteração de preço, ausência de financiamento e alerta de captura desatualizada. A revisão visual foi feita nas sete abas. O recálculo foi verificado no ambiente de geração, não em uma instalação do Microsoft Excel.
+## Ajustes necessários no trabalho
 
-O arquivo anterior foi preservado. A revisão não modifica cadastros fiscais nem envia pedidos a bancos. Os valores sem cotação continuam explícitos para que possam ser substituídos quando houver propostas formais.
+| Local | Divergência | Tratamento na revisão |
+|---|---|---|
+| 1.4.2 e 1.7 | Fechamentos analógicos descritos com envio remoto do segredo | Inteligente de oito portas como objeto principal; liberação e expiração remotas dependem de confirmação técnica. |
+| 1.6 | R$ 50 mensal, R$ 150 semestral e R$ 250 anual | Valores rejeitados pelo autor; substituídos pela grade, sem plano anual de preço arbitrário. |
+| 1.10 | Investimento de R$ 500 a R$ 600 e DAS MEI | Implantação de R$ 9.394,00, sociedade limitada com sócio único e contabilidade por regime. |
+| 2.2 e 3.1 | CNAE 5211-7/02 tratada como principal na oferta, 7729-2/02 na abertura | 7729-2/02 como hipótese jurídica principal; RAIS de guarda-móveis permanece como setor correlato, sem apresentar os 38 estabelecimentos como concorrentes comprovados. |
+| 2.1 | Produto de percentuais de renda e curso tratado como máximo | Conservadas as bases e os números; qualificado como exercício sob hipótese de independência, sem observar a interseção nas duas bases. |
+| 2.4 | Seis portas, quatro assinaturas mais duas temporárias, e capacidade de seis assinaturas simultâneas | Oito portas; grade completa de alocações. Quatro mensais mais quatro temporárias no caso selecionado. Capacidade e produção ficam separadas. |
+| 2.4 | 22 dias, duas janelas de quatro horas e 10% de depreciação para o analógico | Horário informado pelo autor, quatro janelas de três horas e depreciação gerencial de 5% para o inteligente. |
+| 2.4.9 | Expansão automática para 2, 4, 6 e 8 armários | Teste de um e dois módulos em locais distintos; sem multiplicar o faturamento do primeiro campus. |
+| 3.1 | Cinco anos como prazo geral de compensação de prejuízo | Sem expiração geral de cinco anos, com trava de 30% do lucro positivo ajustado e documentação fiscal. |
+| 3.1 | Alíquota inicial integral de 6% para locação pura | Dedução da parcela de ISS e transição anual; primeiro patamar de 3,99% em 2027/28. |
+| 3.1 | Referências futuras de IBS/CBS apresentadas como definitivas | Separadas de regras promulgadas; 11,3% da CBS é referência calculada pelo TCU, com atos de fixação ainda a acompanhar na data da pesquisa. |
+| 3.1 | Cliente PJ do Simples tradicional não pode se creditar | Crédito do adquirente regular pode ser limitado ao montante recolhido no Simples; não equivale à vedação absoluta. |
+| 3.1 | CNAE ou contrato eliminaria toda responsabilidade pelos pertences | Afastada a exoneração geral. Contrato de locação e responsabilidades por falhas devem refletir a operação e o CDC. |
+| 3.1 | SLU exigiria conversão em outra natureza ao admitir sócio | Limitada pode ter um ou mais sócios, mediante alteração contratual. Proteção patrimonial não é absoluta em hipóteses legais. |
+| 3.1 | RAT grave de 3% aplicado automaticamente | Enquadramento e incidência devem ser apurados; modelo sem empregados e sem retirada não adiciona folha inexistente. |
+| Monte Carlo | Contabilidade de R$ 200 no Simples e consumo líquido genérico de 15% no Real | Honorários do arquivo e apuração segregada de consumo/renda; créditos não comprovados ficam em zero. |
+| Financiamento | Condições de instituições distintas poderiam parecer uma oferta única | Referência composta e estresse são explicitados; nenhum empréstimo considerado aprovado. |
+
+## Limites que mudam a decisão
+
+O alto percentual de VPL positivo, 99,32%, depende de priors sem calibração por vendas. A procura central, o preço de três horas (R$ 45,00), a mensalidade e a frequência devem ser testados no ponto. A alternativa está na borda superior da grade de preços. A incerteza de especificação, frete e classificação aduaneira exige cotação do custo entregue.
+
+Um segundo módulo na Unisinos de Porto Alegre tem resultado incremental menor e pode ter VPL negativo; o campus de São Leopoldo é outra hipótese, com população diferente. As matrículas são dados de escala do estudo, não fluxo no corredor ou autorização para instalação. A demanda local é independente no sorteio, mas calendário e fatores macroeconômicos são comuns. A correlação de adesão entre campi não foi estimada.
+
+O VPL remunera os recursos investidos na atividade. Com dívida, o saldo disponível pertence ao fluxo do capital próprio; não se deve atribuir sua rentabilidade à qualidade do equipamento nem escolher alavancagem apenas por dividir por um aporte pequeno. Com aporte próprio zero, o payback desse aporte não existe.
+
+O modelo acompanha a formação de uma reserva, admite meses negativos e sinaliza falta de caixa. Não presume uma linha adicional de resgate nem reduz a operação automaticamente em trajetórias deficitárias. O indicador de VPL positivo sem falta de caixa deve ser lido junto do VPL isolado.
+
+## Fontes verificadas
+
+- [IBGE, notas explicativas CNAE](https://ftp.ibge.gov.br/Informacoes_Gerais_e_Referencia/Classificacoes/CNAE/cnae2_2/cnae2_2_subclasses_20150609.pdf): descrição do código, sem decidir por si só a natureza da relação efetiva.
+- [STF, SV 31 e contratos mistos](https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1286).
+- [Receita Federal, compensação de prejuízos](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/ecf/perguntas-e-respostas-da-pessoa-juridica-2025.pdf).
+- [Senado, partilhas do Anexo III](https://legis.senado.gov.br/norma/40180341/publicacao/40181117).
+- [TCU, cálculo CBS 2027](https://sites.tcu.gov.br/reforma-tributaria/visao-cbs-2027.html) e [Senado, debate ainda agendado em 13/11/2026](https://www12.senado.leg.br/noticias/materias/2026/11/13/cae-ministro-da-fazenda-debate-aliquota-da-cbs-na-terca-feira).
+- [Decreto 12.955/2026, crédito do adquirente regular de fornecedor do Simples](https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-publicacaooriginal-179077-pe.html).
+- [NFS-e nacional, orientações de 06/11/2026](https://www.gov.br/nfse/pt-br/perguntas-frequentes/perguntas-frequentes-nfs-e-v1-3-20261106.pdf/%40%40download/file): novos fatos geradores e código de locação. A dispensa genérica de certificado e a disponibilidade de cada emissor não foram presumidas.
+- [Receita, SC Cosit 120/2016](https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=41018): diferencia ausência de pagamentos de remuneração disfarçada em distribuição de lucro.
+- [BRDE Jovem Empreendedor](https://brde.com.br/linha-financiamento/jovem-empreendedor/), [Finep](https://www.finep.gov.br/credito-operado-por-agentes), [Badesul](https://www.badesul.com.br/produtos/inovacao), [Cartão BNDES](https://www.cartaobndes.gov.br/cartaobndes/PaginasCartao/FAQ.ASP?Acao=R&Cod=91%2C91&T=2).
+
+## Premissas de Monte Carlo
+
+Semente 20261116; 5.000 trajetórias de seleção e 5.000 de validação. Compra uniforme R$ 1.500–2.500. Triangulares: frete (1.000; 1.500; 2.500), multiplicador de outros custos (0,85; 1; 1,3), contabilidade Simples (486; 592; 698), Real (1.200; 1.500; 2.000), Presumido (900; 1.122; 1.500), híbrido (698; 800; 1.122), alcance (10%; 20%; 35%), conversão mensal (0,2%; 0,5%; 0,9%), conversão temporária (3%; 6%; 10%), frequência (2; 4; 6), elasticidade (0,3; 0,9; 1,8), repasse (0%; 10%; 20%), inflação (3%; 4%; 6%) e deslocamento da alíquota de consumo regular (-2; 0; +3 pontos percentuais). TR mensal varia (0,08%; 0,1693%; 0,35%). O deslocamento tributário é sensibilidade, não regra legal.
+
+Procura: Poisson com choque mensal lognormal de média 1 e desvio logarítmico 0,15. Conversões por modalidade e elasticidades são independentes por hipótese. As tarifas maiores usam thinning binomial da procura menor. As janelas têm disponibilidade de 98%; ocorrências seguem Poisson de 0,1 por ano e custo de R$ 1.000. Não há confirmação empírica dessas distribuições. O modelo não inclui aluguel fixo adicional ao repasse. Se o contrato exigir ambos, refazer o orçamento.
+
+Conferência: reconciliação receita-custos-tributos-caixa, empréstimo-principal-saldo, fluxos descontados-VPL, limite físico, separação seleção/validação, taxa anual do Simples, cenário sem clientes e compensação de perdas sem imposto fictício. Os arquivos anteriores permanecem históricos e não devem ser combinados com esta revisão.
+
+A numeração 3.4 foi mantida por solicitação do autor. O arquivo recebido termina a Parte 3 em 3.1; as seções 3.2 e 3.3 não foram inventadas. O sumário teve os números de página antigos retirados, pois a nova paginação dependerá da diagramação final.
