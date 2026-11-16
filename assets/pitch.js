@@ -4,6 +4,7 @@
   const logoSlot=document.querySelector('.hero-logo-slot');
   const flyingLogo=document.querySelector('.hero-logo-flight');
   const navLogo=document.querySelector('.brand img');
+  const footerLogo=document.querySelector('.footer-logo-slot');
   if(logoSlot&&flyingLogo&&navLogo){
     // One visible logo travels between its reserved hero slot and the header.
     document.body.append(flyingLogo);
@@ -14,9 +15,17 @@
       const distance=Math.max(100,Math.min(240,start.top+scrollY-end.top));
       const progress=Math.max(0,Math.min(1,scrollY/distance));
       const t=reduce.matches?(progress>0?1:0):progress;
-      const x=start.left+(end.left-start.left)*t;
-      const y=start.top+(end.top-start.top)*t;
-      const scale=1+(end.width/start.width-1)*t;
+      let x=start.left+(end.left-start.left)*t;
+      let y=start.top+(end.top-start.top)*t;
+      let width=start.width+(end.width-start.width)*t;
+      if(footerLogo){
+        const destination=footerLogo.getBoundingClientRect();
+        const footerProgress=Math.max(0,Math.min(1,(innerHeight*.9-destination.top)/(innerHeight*.4)));
+        const f=reduce.matches?(footerProgress>=.5?1:0):footerProgress;
+        x+=(destination.left-x)*f;y+=(destination.top-y)*f;
+        width+=(destination.width-width)*f;
+      }
+      const scale=width/start.width;
       flyingLogo.style.width=`${start.width}px`;
       flyingLogo.style.transform=`translate3d(${x}px,${y}px,0) scale(${scale})`;
     }
@@ -28,6 +37,7 @@
     },{passive:true});
     addEventListener('resize',requestLogoPosition,{passive:true});
     new ResizeObserver(requestLogoPosition).observe(logoSlot);
+    if(footerLogo)new ResizeObserver(requestLogoPosition).observe(footerLogo);
     document.fonts.ready.then(requestLogoPosition);
     reduce.addEventListener('change',requestLogoPosition);
   }
@@ -58,13 +68,48 @@
   }
   configureGlow();pointerMode.addEventListener('change',configureGlow);reduce.addEventListener('change',configureGlow);
   document.addEventListener('visibilitychange',()=>document.documentElement.classList.toggle('is-page-hidden',document.hidden));
-  const choices=[...document.querySelectorAll('.value-choice')];
-  function selectValue(choice){
-    choices.forEach(c=>{const on=c===choice;const button=c.querySelector('button');c.classList.toggle('active',on);button.classList.toggle('active',on);button.setAttribute('aria-expanded',String(on))});
-    if(!reduce.matches){const p=choice.querySelector('p');p.getAnimations().forEach(a=>a.cancel());p.animate([{opacity:.4,transform:'translateY(7px)'},{opacity:1,transform:'translateY(0)'}],{duration:260,easing:'cubic-bezier(.16,1,.3,1)'})}
+  const steps=[...document.querySelectorAll('.value-step details')];
+  const stepObserver=new IntersectionObserver(entries=>{
+    for(const entry of entries){
+      if(!entry.isIntersecting)continue;
+      const details=entry.target;stepObserver.unobserve(details);details.open=true;
+      const body=details.querySelector('.value-step-body');
+      if(!reduce.matches)body.animate([{height:'0px',opacity:0},{height:`${body.scrollHeight}px`,opacity:1}],{duration:600,easing:'cubic-bezier(.16,1,.3,1)'});
+    }
+  },{rootMargin:'0px 0px -18% 0px',threshold:.5});
+  if(!reduce.matches)steps.forEach(details=>{details.open=false;stepObserver.observe(details)});
+
+  const rollingAnimations=new Set();
+  function rollNumber(el){
+    if(el.dataset.rollDone)return;el.dataset.rollDone='true';
+    if(reduce.matches)return;
+    const final=el.textContent;el.dataset.rollFinal=final;
+    const accessible=document.createElement('span');accessible.className='sr-only';accessible.textContent=final;
+    const visible=document.createElement('span');visible.className='number-reels';visible.setAttribute('aria-hidden','true');
+    let digitIndex=0;
+    for(const char of final){
+      const cell=document.createElement('span');
+      if(/\d/.test(char)){
+        cell.className='number-digit';const reel=document.createElement('span');reel.className='number-reel';
+        const turns=20+Number(char);
+        for(let value=0;value<=turns;value++){const row=document.createElement('span');row.dataset.digit=String(value%10);reel.append(row)}
+        reel.style.transform=`translateY(-${turns}em)`;cell.append(reel);visible.append(cell);
+        const animation=reel.animate([{transform:'translateY(0)'},{transform:`translateY(-${turns}em)`}],{duration:1300,delay:digitIndex++*55,easing:'cubic-bezier(.16,1,.3,1)',fill:'backwards'});
+        rollingAnimations.add(animation);animation.finished.then(()=>rollingAnimations.delete(animation)).catch(()=>rollingAnimations.delete(animation));
+      }else{cell.className='number-literal';cell.textContent=char;visible.append(cell)}
+    }
+    el.replaceChildren(accessible,visible);
   }
-  selectValue(choices[0]);document.documentElement.classList.add('pitch-ready');
-  choices.forEach(c=>c.querySelector('button').addEventListener('click',()=>selectValue(c)));
+  const numberObserver=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){numberObserver.unobserve(entry.target);rollNumber(entry.target)}});
+  },{threshold:.35});
+  document.querySelectorAll('[data-roll]').forEach(el=>numberObserver.observe(el));
+  reduce.addEventListener('change',()=>{
+    if(!reduce.matches)return;
+    stepObserver.disconnect();steps.forEach(details=>details.open=true);
+    rollingAnimations.forEach(animation=>animation.finish());
+    document.getAnimations().forEach(animation=>{if(Number.isFinite(animation.effect?.getComputedTiming().endTime))animation.finish()});
+  });
   if(!reduce.matches){
     const observer=new IntersectionObserver(entries=>{
       if(reduce.matches)return;
@@ -85,12 +130,5 @@
       }
     },{threshold:.16});
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-    let visible=false,frame=0;
-    const image=document.querySelector('.problem-image img');
-    const scope=document.querySelector('.pitch-problem');
-    new IntersectionObserver(e=>{visible=e[0].isIntersecting},{rootMargin:'100px'}).observe(scope);
-    function move(){frame=0;if(reduce.matches||!visible)return;const r=scope.getBoundingClientRect();const p=Math.max(-1,Math.min(1,(r.top+r.height/2-innerHeight/2)/innerHeight));image.style.transform=`translateY(${p*14}px) scale(1.04)`}
-    addEventListener('scroll',()=>{if(visible&&!frame)frame=requestAnimationFrame(move)},{passive:true});
-    reduce.addEventListener('change',()=>{if(reduce.matches){document.getAnimations().forEach(a=>{if(Number.isFinite(a.effect?.getComputedTiming().endTime))a.finish()});image.style.transform='none'}});
   }
 })();
