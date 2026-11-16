@@ -20,7 +20,10 @@
       let width=start.width+(end.width-start.width)*t;
       if(footerLogo){
         const destination=footerLogo.getBoundingClientRect();
-        const footerProgress=Math.max(0,Math.min(1,(innerHeight*.9-destination.top)/(innerHeight*.4)));
+        const startScroll=destination.top+scrollY-innerHeight*.9;
+        const availableScroll=Math.max(1,document.documentElement.scrollHeight-innerHeight-startScroll);
+        const travel=Math.min(innerHeight*.4,availableScroll);
+        const footerProgress=Math.max(0,Math.min(1,(scrollY-startScroll)/travel));
         const f=reduce.matches?(footerProgress>=.5?1:0):footerProgress;
         x+=(destination.left-x)*f;y+=(destination.top-y)*f;
         width+=(destination.width-width)*f;

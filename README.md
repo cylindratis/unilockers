@@ -10,7 +10,7 @@ Para prévia local: `python -m http.server 8000` e acessar `http://localhost:800
 
 ## Conteúdo
 
-- Problema, proposta de valor, demanda, segmentos de clientes, possibilidade de automação, aspectos locacionais e roadmap, com trechos literais das duas apresentações fornecidas.
+- Problema, proposta de valor, demanda, segmentos de clientes, possibilidade de automação, aspectos locacionais, com trechos literais das duas apresentações fornecidas.
 - Projeção determinística de 60 meses e comparação de financiamento.
 - Monte Carlo com trajetórias, média, faixa central de 90% e distribuição final estimada por kernel gaussiano.
 - Comparação das médias de 180 combinações de preço/mix, com destaque na vencedora pela amostra de seleção.
@@ -31,3 +31,5 @@ Revisão de 15/11/2026 com a 3ª Avaliação: modelo inteligente de oito portas,
 A abertura risca “livros molhados” e “dor nas costas” com o azul da marca e apresenta o logo, a mensagem e o smart locker azul e cinza com tela branca. O PNG `assets/smart-locker-white-transparent.png` veio da última versão fornecida pelo autor e tem transparência real. Um único logo visível se desloca da abertura ao cabeçalho conforme a rolagem e retorna ao subir. No computador, a luz azul acompanha o cursor; em telas pequenas ou dispositivos de toque, três luzes se deslocam lentamente. Movimento reduzido apresenta a solução imediatamente e interrompe os efeitos contínuos; sem JavaScript, o conteúdo continua disponível.
 
 A seção de problema abaixo do hero e a seção de possibilidade de automação foram removidas. Demanda e segmentos de clientes formam uma seção, com ícones, números em negrito e dígitos animados ao entrar na tela. Aspectos locacionais usa quatro novas imagens do smart locker com visor branco em um bento grid. O Monte Carlo mantém os dados e controles: gráfico em dois terços à esquerda e indicadores em texto à direita, empilhados em telas pequenas. No fim da página, o logo do cabeçalho se desloca ao rodapé. As notas explicativas, fontes e premissas ficam em um menu nativo recolhível, junto ao crédito acadêmico e aos três LinkedIns fornecidos.
+
+Refinamento desktop: a abertura agora conclui a saída dos textos riscados antes de revelar a solução. Roadmap removido. O logo do rodapé limita-se a 260–460px em telas maiores; o comportamento mobile é preservado. Os três itens da proposta de valor receberam ícones de traço consistente, e o logo continua chegando ao rodapé mesmo com sua altura reduzida.
